@@ -1,2 +1,1 @@
-# WechatLearn
-Study WeChat APP
+# 此项目用于学习微信小程序
