@@ -1,0 +1,25 @@
+.row-view {
+    flex-direction: row;
+    display: flex;
+    background-color: #ff00ff;
+    height: 50px;
+    width: 100%
+}
+
+.cloumn-view{
+    flex-direction: column;
+    display: flex;
+    background-color: #ff00ff;
+    height: 100px;
+    width: 40px;
+}
+
+.item{
+    flex: 1;
+    flex-direction: row;
+    background-color: #ffff00;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+

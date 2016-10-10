@@ -1,0 +1,13 @@
+<view> flex-direction:row </view>
+<view class="row-view" style="flex-direction:row;">
+    <view class="item" style="background-color: #ffff00;"> 1</view>
+    <view class="item" style="background-color: #00FFFF;"> 2</view>
+    <view class="item" style="background-color: #00EE00;"> 3</view>
+</view>
+
+<view> flex-direction:column </view>
+<view class="cloumn-view" style="flex-direction:column;">
+    <view class="item" style="background-color: #ffff00;"> 1</view>
+    <view class="item" style="background-color: #00FFFF;"> 2</view>
+    <view class="item" style="background-color: #00EE00;"> 3</view>
+</view>

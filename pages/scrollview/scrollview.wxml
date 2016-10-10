@@ -1,0 +1,20 @@
+<view> vertical scroll</view>
+<scroll-view scroll-y="true" style="height:140px;"
+    bindscrolltoupper="scrollToUpper" 
+    bindscrolltolower="scrollToLower"
+    bindscroll="scroll"
+    scroll-into-view="{{toView}}"
+    scroll-top="{{top}}">
+
+    <view id="one" class="row-view">行1</view>
+    <view id="two" class="row-view">行2</view>
+    <view id="three" class="row-view">行3</view>
+    <view id="four" class="row-view">行4</view>
+    <view id="five" class="row-view">行5</view>
+    <view id="six" class="row-view">行6</view>
+    <view id="seven" class="row-view">行7</view>
+    <view id="eight" class="row-view">行8</view>
+
+</scroll-view>
+<button bindtap="scrollToPosition">滚动到指定行</button>
+<button bindtap="scrollMove">scroll</button>
