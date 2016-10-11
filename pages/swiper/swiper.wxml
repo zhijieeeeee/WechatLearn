@@ -1,0 +1,11 @@
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height:200px;"
+  bindchange="pageChange">
+  
+  <block wx:for="{{imgs}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+  
+</swiper>

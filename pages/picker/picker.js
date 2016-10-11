@@ -1,7 +1,10 @@
 Page( {
     data: {
-        sliderValue:20,
-        switchChecked:true
+        // text:"这是一个页面"
+        list: [ '北京', '上海', '广州', '成都' ],
+        index: 0,
+        time:'15:10',
+        date:'2016-10-11'
     },
     onLoad: function( options ) {
         // 页面初始化 options为页面跳转所带来的参数
@@ -19,21 +22,22 @@ Page( {
         // 页面关闭
     },
 
-
-    changeSlider:function(e){
+    chooseNormalPicker: function(e) {
         this.setData({
-            sliderValue:e.detail.value
+            index:e.detail.value
         })
-
-        console.log(this.data.sliderValue)
     },
 
-    changeSwitch:function(e){
+    chooseTimePicker:function(e){
         this.setData({
-            switchChecked:e.detail.value
+            time:e.detail.value
         })
+    },
 
-        console.log(this.data.switchChecked)
+    chooseDatePicker:function(e){
+        this.setData({
+            date:e.detail.value
+        })
     }
 
 })

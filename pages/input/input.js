@@ -1,7 +1,6 @@
 Page( {
     data: {
-        sliderValue:20,
-        switchChecked:true
+        inputValue: ''
     },
     onLoad: function( options ) {
         // 页面初始化 options为页面跳转所带来的参数
@@ -19,21 +18,12 @@ Page( {
         // 页面关闭
     },
 
-
-    changeSlider:function(e){
-        this.setData({
-            sliderValue:e.detail.value
+    getInput: function( e ) {
+        this.setData( {
+            inputValue: e.detail.value
         })
-
-        console.log(this.data.sliderValue)
-    },
-
-    changeSwitch:function(e){
-        this.setData({
-            switchChecked:e.detail.value
-        })
-
-        console.log(this.data.switchChecked)
     }
+    //收起键盘
+    //wx.hideKeyboard()
 
 })

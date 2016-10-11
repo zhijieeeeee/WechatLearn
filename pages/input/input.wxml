@@ -1,0 +1,15 @@
+<input value="我是默认值"/>
+
+<input placeholder="我是占位符"/>
+
+<input placeholder="这是一个可以自动聚焦的input" auto-focus/>
+
+<input placeholder="请输入密码" password="true"/>
+
+<input placeholder-style="color:red" placeholder="占位符字体是红色的"/>
+
+<input placeholder-class="input_holder_class" placeholder="占位符字体是蓝色的"/>
+
+<text>你输入的是：{{inputValue}}</text>
+
+<input placeholder="输入同步到text中" bindinput="getInput" maxlength="10"/>

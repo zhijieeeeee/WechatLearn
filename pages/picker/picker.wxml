@@ -1,0 +1,14 @@
+<text>普通选择器</text>
+<picker mode = "selector" range="{{list}}" value="{{index}}" bindchange="chooseNormalPicker">
+    <button>你选择的是：{{list[index]}}</button>
+</picker>
+
+<text>时间选择器</text>
+<picker mode = "time" value="{{time}}" start="00：00" end="23:23" bindchange="chooseTimePicker">
+    <button>你选择的是：{{time}}</button>
+</picker>
+
+<text>日期选择器</text>
+<picker mode = "date" value="{{date}}" start="2011-01-01" end="2020-12-21" bindchange="chooseDatePicker">
+    <button>你选择的是：{{date}}</button>
+</picker>

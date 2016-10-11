@@ -1,7 +1,20 @@
 var app = getApp()
 Page( {
     data: {
-        list: [ 'view', 'scroll-view' ]
+        list: [
+            'view',
+            'scroll-view',
+            'swiper',
+            'icon',
+            'text',
+            'progress',
+            'button',
+            'checkbox',
+            'input',
+            'picker',
+            'radio',
+            'actionsheet+modal+toast+loading'
+        ]
     },
     onLoad: function( options ) {
         // 页面初始化 options为页面跳转所带来的参数
@@ -20,31 +33,75 @@ Page( {
     },
 
     click: function( event ) {
+        console.log( event )
+        var index = event.target.dataset.index;
 
-        console.log( event.target.dataset.index )
+        //parseInt转化为int型
+        console.log( parseInt( event.target.dataset.index ) + 1 )
 
-        if( event.target.dataset.index == 0 ) {
-            wx.navigateTo( {
-                url: '../view/view'
-            })
-        } else if( event.target.dataset.index == 1 ) {
-            wx.navigateTo( {
-                url: '../scrollview/scrollview'
-            })
+        switch( index ) {
+            case '0':
+                wx.navigateTo( {
+                    url: '../view/view'
+                })
+                break;
+            case '1':
+                wx.navigateTo( {
+                    url: '../scrollview/scrollview'
+                })
+                break;
+            case '2':
+                wx.navigateTo( {
+                    url: '../swiper/swiper'
+                })
+                break;
+            case '3':
+                wx.navigateTo( {
+                    url: '../icon/icon'
+                })
+                break;
+            case '4':
+                wx.navigateTo( {
+                    url: '../text/text'
+                })
+                break;
+            case '5':
+                wx.navigateTo( {
+                    url: '../progress/progress'
+                })
+                break;
+            case '6':
+                wx.navigateTo( {
+                    url: '../button/button'
+                })
+                break;
+            case '7':
+                wx.navigateTo( {
+                    url: '../checkbox/checkbox'
+                })
+                break;
+            case '8':
+                wx.navigateTo( {
+                    url: '../input/input'
+                })
+                break;
+            case '9':
+                wx.navigateTo( {
+                    url: '../picker/picker'
+                })
+                break;
+            case '10':
+                wx.navigateTo( {
+                    url: '../radio/radio'
+                })
+                break;
+            case '11':
+                wx.navigateTo( {
+                    url: '../actionsheet/actionsheet'
+                })
+                break;
         }
 
-        // switch( event.target.dataset.index ) {
-        //     case 0:
-        //         console.log( 'view' )
-
-        //         break;
-        //     case 1:
-        //         console.log( 'scrollview' )
-        //         wx.navigateTo( {
-        //             url: '../../scrollview/scrollview'
-        //         })
-        //         break;
-        // }
     }
 
 })

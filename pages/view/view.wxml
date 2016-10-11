@@ -11,3 +11,13 @@
     <view class="item" style="background-color: #00FFFF;"> 2</view>
     <view class="item" style="background-color: #00EE00;"> 3</view>
 </view>
+
+<view style="margin-top:20px"> slider组件 </view>
+
+<slider min="0" max="100" step="1" value="{{sliderValue}}" show-value="true" bindchange="changeSlider"/>
+
+<view style="margin-top:20px"> switch组件 </view>
+
+<switch checked="{{switchChecked}}" bindchange="changeSwitch"></switch>
+
+<switch type="checkbox"></switch>

@@ -1,0 +1,17 @@
+<button class="p" size="default">size:default</button>
+
+<button class="p" size="mini">size:mini</button>
+
+<button class="p" size="default" type="primary">type:primary</button>
+
+<button class="p" size="default" type="default">type:default</button>
+
+<button class="p" size="default" type="warn">type:warn</button>
+
+<button class="p" plain="true">plain:true</button>
+
+<button class="p" disabled="true">disabled</button>
+
+<button class="p" loading="{{isLoading}}" bindtap="showLoading">点我显示Loading</button>
+
+<button class="p" hover-class="other_button-hover">自定义的点击样式</button>

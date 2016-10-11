@@ -1,0 +1,31 @@
+
+<!--action-sheet-->
+<button bindtap="showActionSheet">弹出action-sheet</button>
+<action-sheet bindchange="showActionSheet" hidden="{{actionSheetHidden}}">
+    <block wx:for="{{list}}">
+        <action-sheet-item bindtap="bindItemTap" data-name="{{item}}">{{item}}</action-sheet-item>
+    </block>
+    <action-sheet-cancel>取消</action-sheet-cancel>
+</action-sheet>
+
+<!--modal-->
+<modal hidden="{{hideModal1}}" no-cancel="true" bindconfirm="modal1Confirm">这是对话框1的内容。</modal>
+
+<modal hidden="{{hideModal2}}" title="这是标题" confirm-text="Yes" cancel-text="No"
+        bindconfirm="modal2Confirm" bindcancel="modal2Cancel">
+        <icon type="success" color="blue"/>
+</modal>
+<button bindtap="showModal">弹出modal</button>
+<button bindtap="showModal2">弹出modal2</button>
+
+
+<!--toast-->
+<toast hidden="{{hideToast}}" bindchange="showToast" duration="1500">吐司</toast>
+<button bindtap="showToast" >弹出toast</button>
+
+
+<!--loading-->
+<loading hidden="{{hideLoading}}" bindchange="loadingChange">
+    加载中...
+</loading>
+<button bindtap="loadingChange">点击弹出loading</button>

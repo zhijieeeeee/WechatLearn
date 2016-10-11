@@ -1,7 +1,7 @@
 Page( {
     data: {
-        sliderValue:20,
-        switchChecked:true
+        // text:"这是一个页面"
+        isLoading:false
     },
     onLoad: function( options ) {
         // 页面初始化 options为页面跳转所带来的参数
@@ -19,21 +19,12 @@ Page( {
         // 页面关闭
     },
 
-
-    changeSlider:function(e){
+    showLoading: function() {
         this.setData({
-            sliderValue:e.detail.value
+            isLoading:!this.data.isLoading
         })
-
-        console.log(this.data.sliderValue)
-    },
-
-    changeSwitch:function(e){
-        this.setData({
-            switchChecked:e.detail.value
-        })
-
-        console.log(this.data.switchChecked)
     }
+
+
 
 })

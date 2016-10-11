@@ -1,0 +1,5 @@
+<checkbox-group bindchange="changeChioce">
+    <view wx:for="{{data}}" class="v">
+        <checkbox  value="{{item.name}}" checked="{{item.checked}}">{{item.value}}</checkbox>
+    </view>
+</checkbox-group>
