@@ -1,3 +1,5 @@
 <block wx:for="{{list}}">
     <button data-index="{{index}}" bindtap="click">{{item}}</button>
 </block>
+
+<navigator url='../swiper/swiper?title=ssss' style="height:100px;width:100%;" hover-class="other-navigator-hover">navigator</navigator>

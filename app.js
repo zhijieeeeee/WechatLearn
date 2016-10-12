@@ -15,6 +15,7 @@ App( {
   },
 
   getUserInfo: function( cb ) {
+    console.log("类型是"+typeof cb)//输出function
     var that = this
     if( this.globalData.userInfo ) {
       typeof cb == "function" && cb( this.globalData.userInfo )

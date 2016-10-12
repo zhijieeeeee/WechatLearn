@@ -13,7 +13,9 @@ Page( {
             'input',
             'picker',
             'radio',
-            'actionsheet+modal+toast+loading'
+            'actionsheet+modal+toast+loading',
+            'audio+video',
+            'image'
         ]
     },
     onLoad: function( options ) {
@@ -32,7 +34,7 @@ Page( {
         // 页面关闭
     },
 
-    click: function( event ) {
+    click( event ) {
         console.log( event )
         var index = event.target.dataset.index;
 
@@ -42,7 +44,7 @@ Page( {
         switch( index ) {
             case '0':
                 wx.navigateTo( {
-                    url: '../view/view'
+                    url: '../view/view?id=1111111'
                 })
                 break;
             case '1':
@@ -98,6 +100,16 @@ Page( {
             case '11':
                 wx.navigateTo( {
                     url: '../actionsheet/actionsheet'
+                })
+                break;
+            case '12':
+                wx.navigateTo( {
+                    url: '../audio/audio'
+                })
+                break;
+            case '13':
+                wx.navigateTo( {
+                    url: '../image/image'
                 })
                 break;
         }

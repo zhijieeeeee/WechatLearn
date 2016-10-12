@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/component/component",
+    "pages/api/api",
     "pages/test/test",
     "pages/index/index",
     "pages/logs/logs",
@@ -15,7 +16,9 @@
     "pages/input/input",
     "pages/picker/picker",
     "pages/radio/radio",
-    "pages/actionsheet/actionsheet"
+    "pages/actionsheet/actionsheet",
+    "pages/audio/audio",
+    "pages/image/image"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -32,6 +35,12 @@
       {
         "pagePath": "pages/component/component",
         "text": "组件",
+        "iconPath": "image/wechat.png",
+        "selectedIconPath": "image/wechatHL.png"
+      },
+      {
+        "pagePath": "pages/api/api",
+        "text": "Api",
         "iconPath": "image/wechat.png",
         "selectedIconPath": "image/wechatHL.png"
       },

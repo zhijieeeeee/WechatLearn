@@ -1,0 +1,7 @@
+<button bindtap="httpRequest">访问接口</button>
+
+<button bindtap="chooseImage">选择图片</button>
+
+<view  wx:for="{{imgs}}">
+    <image class="i" src="{{item}}" data-index="{{index}}" bindtap="previewImage"/>
+</view>

@@ -1,0 +1,6 @@
+<view wx:for="{{array}}" class="v">
+    <text>{{item.text}}</text>
+    <image src="{{src}}" mode="{{item.mode}}" style="width: 200px; height: 200px;"></image>
+</view>
+
+<image src="http://img.juhe.cn/joke/201412/19/DDE51B6C09E1557D6542627755901308.gif"></image>
