@@ -5,6 +5,13 @@ Page( {
     },
     onLoad( options ) {
         // 页面初始化 options为页面跳转所带来的参数
+
+        var a={a:1}
+        var b={b:1}
+
+        
+        console.log(Object.assign({c:1},a,b))
+
     },
     onReady() {
         // 页面渲染完成
@@ -65,11 +72,19 @@ Page( {
                 var tempFilePaths = res.tempFilePaths
                 console.log( tempFilePaths )
 
-                imgList.push( tempFilePaths)
+                console.log( typeof  tempFilePaths)
+
+                // //使用map遍历tempFilePaths数组
+                // tempFilePaths.map((item)=>{
+                //         imgList.push(item)
+                //         
+                // })
+                // console.log( imgList )
 
                 //显示选择的图片
                 that.setData( {
-                    imgs: imgList
+                    //使用concat连接两个数组，返回新的连接后的数组
+                    imgs: imgList.concat(tempFilePaths)
                 })
             }
         })
@@ -80,7 +95,7 @@ Page( {
 
         wx.previewImage( {
             current: imgList[e.target.dataset.index], // 当前显示图片的http链接
-            urls: imgList // 需要预览的图片http链接列表
+            urls: that.data.imgs // 需要预览的图片http链接列表
         })
     }
 })
