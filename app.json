@@ -4,6 +4,7 @@
     "pages/api/api",
     "pages/test/test",
     "pages/index/index",
+    "pages/css/css",
     "pages/logs/logs",
     "pages/view/view",
     "pages/scrollview/scrollview",
@@ -58,8 +59,8 @@
         "selectedIconPath": "image/wechatHL.png"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "日志",
+        "pagePath": "pages/css/css",
+        "text": "CSS",
         "iconPath": "image/wechat.png",
         "selectedIconPath": "image/wechatHL.png"
       }

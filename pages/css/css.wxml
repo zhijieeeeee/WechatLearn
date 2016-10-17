@@ -1,0 +1,5 @@
+<view class="test">
+    <text>我是居中的I am god</text>
+
+    <icon class="floaticon" type="success" color="#ff00ff"/>
+</view>

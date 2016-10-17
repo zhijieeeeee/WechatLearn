@@ -1,0 +1,25 @@
+/*图片作为背景*/
+.test{
+  background-image: url('../../image/wechat.png');
+  display: flex;
+  height: 200%;
+}
+/*字体对齐和间距，装饰，大小写*/
+.test text{
+    background-color: lawngreen;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    word-spacing: 30px;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    text-decoration: line-through;
+    text-shadow: 2px 2px 2px #ff00ff;
+}
+
+.floaticon{
+  position: fixed;
+  float: right;
+  bottom: 0;
+  right: 0;
+}
