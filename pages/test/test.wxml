@@ -4,7 +4,7 @@
     <view>我是数组中的：{{array[0].name}}</view>
     <view>我是对象中的：{{object.name}}</view>
     <button bindtap="changeName">点我</button>
-    <button bindlongtap="longpress" data-tzj="tangzhijie">长按我</button>
+    <button bindlongpress="longpress" data-tzj="tangzhijie">长按我</button>
     <button bindtap="changeNameInArray">点我改变数组中的值</button>
     <button bindtap="changeNameInObject">点我改变对象中的值</button>
     <button bindtap="addNewFiled">点我添加新的值+{{newField}}</button>

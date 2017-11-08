@@ -78,7 +78,7 @@ Page( {
     },
     //使用navigate跳转路由
     jumpTo: function() {
-        wx.navigateTo( {
+        wx.reLaunch( {
             url: '../index/index'
         })
     },
