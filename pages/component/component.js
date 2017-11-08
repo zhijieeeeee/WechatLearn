@@ -39,75 +39,75 @@ Page( {
         var index = event.target.dataset.index;
 
         //parseInt转化为int型
-        console.log( parseInt( event.target.dataset.index ) + 1 )
+        console.log( parseInt( event.target.dataset.index ))
 
         switch( index ) {
-            case '0':
+            case 0:
                 wx.navigateTo( {
                     url: '../view/view?id=1111111'
                 })
                 break;
-            case '1':
+            case 1:
                 wx.navigateTo( {
                     url: '../scrollview/scrollview'
                 })
                 break;
-            case '2':
+            case 2:
                 wx.navigateTo( {
                     url: '../swiper/swiper'
                 })
                 break;
-            case '3':
+            case 3:
                 wx.navigateTo( {
                     url: '../icon/icon'
                 })
                 break;
-            case '4':
+            case 4:
                 wx.navigateTo( {
                     url: '../text/text'
                 })
                 break;
-            case '5':
+            case 5:
                 wx.navigateTo( {
                     url: '../progress/progress'
                 })
                 break;
-            case '6':
+            case 6:
                 wx.navigateTo( {
                     url: '../button/button'
                 })
                 break;
-            case '7':
+            case 7:
                 wx.navigateTo( {
                     url: '../checkbox/checkbox'
                 })
                 break;
-            case '8':
+            case 8:
                 wx.navigateTo( {
                     url: '../input/input'
                 })
                 break;
-            case '9':
+            case 9:
                 wx.navigateTo( {
                     url: '../picker/picker'
                 })
                 break;
-            case '10':
+            case 10:
                 wx.navigateTo( {
                     url: '../radio/radio'
                 })
                 break;
-            case '11':
+            case 11:
                 wx.navigateTo( {
                     url: '../actionsheet/actionsheet'
                 })
                 break;
-            case '12':
+            case 12:
                 wx.navigateTo( {
                     url: '../audio/audio'
                 })
                 break;
-            case '13':
+            case 13:
                 wx.navigateTo( {
                     url: '../image/image'
                 })
