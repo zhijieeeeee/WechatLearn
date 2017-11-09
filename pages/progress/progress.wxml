@@ -2,3 +2,4 @@
 <progress class="p" percent="40" stroke-width="20"></progress>
 <progress class="p" percent="60" color="red"></progress>
 <progress class="p" percent="80" active="true"></progress>
+<progress class="p" percent="100" active="true" backgroundColor='blue' activeColor='orange'></progress>

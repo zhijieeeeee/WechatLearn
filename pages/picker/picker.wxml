@@ -12,3 +12,8 @@
 <picker mode = "date" value="{{date}}" start="2011-01-01" end="2020-12-21" bindchange="chooseDatePicker">
     <button>你选择的是：{{date}}</button>
 </picker>
+
+<text>省市区选择器</text>
+<picker mode = "region" value="{{region}}" bindchange="chooseRegionPicker">
+    <button>你选择的是：{{region}}</button>
+</picker>

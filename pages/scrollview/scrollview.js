@@ -2,8 +2,8 @@ var app = getApp()
 var order = [ "one", "two", "three", "four", "five", "six", "seven", "eight" ]
 Page( {
     data: {
-        toView: 'one',
-        top: 10
+      toView: 'tetete',
+        top: 0
     },
     onLoad: function( options ) {
         // 页面初始化 options为页面跳转所带来的参数

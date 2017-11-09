@@ -1,11 +1,9 @@
-<swiper indicator-dots="{{indicatorDots}}"
-  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height:200px;"
-  bindchange="pageChange">
-  
+<swiper indicator-dots="{{indicatorDots}}" indicator-color='white' indicator-active-color='red' circular='{{true}}' autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height:200px;" bindchange="pageChange">
+
   <block wx:for="{{imgs}}">
     <swiper-item>
-      <image src="{{item}}" class="slide-image"/>
+      <image src="{{item}}" class="slide-image" bindtap='imgclick' data-url='{{item}}'/>
     </swiper-item>
   </block>
-  
+
 </swiper>

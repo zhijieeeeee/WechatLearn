@@ -1,6 +1,8 @@
 Page( {
     data: {
         indicatorDots: true,
+        indicatorColor:'white',
+        indicatorActiveColor: 'red',
         autoplay: true,
         interval: 5000,
         duration: 1000,
@@ -30,5 +32,10 @@ Page( {
     //监听当前页变化
     pageChange:function(event){
         console.log("当前页:"+event.detail.current)
+    },
+
+    imgclick:function(event){
+      console.log(event)
+      console.log(event.currentTarget.dataset.url)
     }
 })

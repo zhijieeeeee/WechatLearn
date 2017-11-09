@@ -19,14 +19,15 @@
     "pages/radio/radio",
     "pages/actionsheet/actionsheet",
     "pages/audio/audio",
-    "pages/image/image"
+    "pages/image/image",
+    "pages/moveable/moveable"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black",
-    "enablePullDownRefresh":true
+    "enablePullDownRefresh": true
   },
   "tabBar": {
     "color": "#dddddd",

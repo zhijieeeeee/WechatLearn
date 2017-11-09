@@ -22,6 +22,6 @@
     <view id="six" class="row-view" style="height:80px">行6</view>
     <view id="seven" class="row-view" style="height:80px">行7</view>
     <view id="eight" class="row-view" style="height:80px">行8</view>
-     <view id="one" class="row-view" style="height:80px">行0001</view>
+     <view id="tetete" class="row-view" style="height:80px">行0001</view>
 
 </scroll-view>
