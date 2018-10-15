@@ -1,4 +1,4 @@
-<block wx:for="{{list}}">
+<block wx:for="{{list}}" wx:key="*this">
     <button data-index="{{index}}" bindtap="click">{{item}}</button>
 </block>
 
